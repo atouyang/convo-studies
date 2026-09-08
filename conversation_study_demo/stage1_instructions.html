@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Study — Instructions</title>
+  
+<style>
+  :root {
+    --max-width: 900px;
+    --border: #d9d9d9;
+    --muted: #666;
+    --bg-soft: #f7f7f7;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: white;
+    color: #111;
+  }
+
+  main {
+    width: min(var(--max-width), calc(100% - 40px));
+    margin: 0 auto;
+    padding: 56px 0 72px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 0 0 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .continue {
+    margin-top: 36px;
+    font-weight: 700;
+  }
+
+  .error {
+    border: 1px solid #b00020;
+    padding: 16px;
+    margin-top: 20px;
+  }
+
+  button {
+    font: inherit;
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+</style>
+
+</head>
+<body>
+<main>
+  <h1 id="title">Loading…</h1>
+  <div id="instructions"></div>
+  <p class="continue" id="continueText"></p>
+  <div id="error" class="error" hidden></div>
+</main>
+
+<script>
+(async function () {
+  const errorBox = document.getElementById("error");
+
+  function fail(message) {
+    errorBox.hidden = false;
+    errorBox.textContent = message;
+  }
+
+  try {
+    const [configResponse, stageResponse] = await Promise.all([
+      fetch("config.json"),
+      fetch("stage1_instructions.json")
+    ]);
+
+    if (!configResponse.ok || !stageResponse.ok) {
+      throw new Error("Could not load the study JSON files.");
+    }
+
+    const config = await configResponse.json();
+    const stage = await stageResponse.json();
+
+    document.getElementById("title").textContent = stage.title;
+    document.getElementById("instructions").innerHTML =
+      stage.instructions.map(text => `<p>${text}</p>`).join("");
+    document.getElementById("continueText").textContent = stage.continue_text;
+
+    const params = new URLSearchParams(window.location.search);
+    let participantId = params.get("participant_id");
+
+    if (!participantId) {
+      participantId = crypto.randomUUID();
+      params.set("participant_id", participantId);
+      history.replaceState(null, "", `${location.pathname}?${params.toString()}`);
+    }
+
+    localStorage.setItem("conversationStudySession", JSON.stringify({
+      participant_id: participantId,
+      experiment_name: config.experiment_name,
+      conversation_id: config.conversation_id,
+      rated_person: config.rated_person,
+      study_started_at: new Date().toISOString(),
+      stage1_started_at: new Date().toISOString()
+    }));
+
+    let ready = true;
+
+    document.addEventListener("keydown", function (event) {
+      if (!ready || event.key !== "Enter" || event.repeat) return;
+
+      const session = JSON.parse(
+        localStorage.getItem("conversationStudySession") || "{}"
+      );
+      session.stage1_completed_at = new Date().toISOString();
+      localStorage.setItem("conversationStudySession", JSON.stringify(session));
+
+      window.location.href = `stage2_transcript.html?${params.toString()}`;
+    });
+  } catch (error) {
+    fail(
+      error.message +
+      " Serve this folder through a web server rather than opening the HTML with file://."
+    );
+  }
+})();
+</script>
+</body>
+</html>

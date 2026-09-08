@@ -1,0 +1,118 @@
+{
+  "title": "Personality Questionnaire",
+  "instructions": "Based only on the conversation you just read, indicate how well each statement describes {rated_person}.",
+  "scale": [
+    {
+      "value": 1,
+      "label": "Strongly disagree"
+    },
+    {
+      "value": 2,
+      "label": "Disagree"
+    },
+    {
+      "value": 3,
+      "label": "Neutral"
+    },
+    {
+      "value": 4,
+      "label": "Agree"
+    },
+    {
+      "value": 5,
+      "label": "Strongly agree"
+    }
+  ],
+  "items": [
+    {
+      "item_id": 1,
+      "item_text": "Tends to be quiet.",
+      "trait": "Extraversion",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 2,
+      "item_text": "Is compassionate, has a soft heart.",
+      "trait": "Agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 3,
+      "item_text": "Tends to be disorganized.",
+      "trait": "Conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 4,
+      "item_text": "Worries a lot.",
+      "trait": "Neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 5,
+      "item_text": "Is fascinated by art, music, or literature.",
+      "trait": "Openness",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 6,
+      "item_text": "Is dominant, acts as a leader.",
+      "trait": "Extraversion",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 7,
+      "item_text": "Is sometimes rude to others.",
+      "trait": "Agreeableness",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 8,
+      "item_text": "Has difficulty getting started on tasks.",
+      "trait": "Conscientiousness",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 9,
+      "item_text": "Tends to feel depressed, blue.",
+      "trait": "Neuroticism",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 10,
+      "item_text": "Has little interest in abstract ideas.",
+      "trait": "Openness",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 11,
+      "item_text": "Is full of energy.",
+      "trait": "Extraversion",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 12,
+      "item_text": "Assumes the best about people.",
+      "trait": "Agreeableness",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 13,
+      "item_text": "Is reliable, can always be counted on.",
+      "trait": "Conscientiousness",
+      "reverse_scored": false
+    },
+    {
+      "item_id": 14,
+      "item_text": "Is emotionally stable, not easily upset.",
+      "trait": "Neuroticism",
+      "reverse_scored": true
+    },
+    {
+      "item_id": 15,
+      "item_text": "Is original, comes up with new ideas.",
+      "trait": "Openness",
+      "reverse_scored": false
+    }
+  ]
+}
