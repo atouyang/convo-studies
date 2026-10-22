@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conversation Study — Questionnaire</title>
   <link rel="stylesheet" href="style.css">
-  <script src="router.js"></script>
+  <script src="router.js?v=20261022-fix1"></script>
   <style>
     .item { padding:24px 0; border-bottom:1px solid var(--border); }
     .item-text { font-size:18px; font-weight:600; margin-bottom:14px; }
@@ -62,16 +62,16 @@
     const [configResponse, questionnaireResponse, convoResponse] = await Promise.all([
       fetch("config.json"),
       fetch("data/questionnaire.json"),
-      fetch(`data/conversations/${encodeURIComponent(conversationId)}.json`)
+      loadConversationData(conversationId)
     ]);
 
-    if (!configResponse.ok || !questionnaireResponse.ok || !convoResponse.ok) {
+    if (!configResponse.ok || !questionnaireResponse.ok) {
       throw new Error("Could not load questionnaire data.");
     }
 
     const config = await configResponse.json();
     const questionnaire = await questionnaireResponse.json();
-    const conversation = await convoResponse.json();
+    const conversation = convoResponse;
 
     const speakerLabels = {};
     conversation.speakers.forEach((speaker, index) => {

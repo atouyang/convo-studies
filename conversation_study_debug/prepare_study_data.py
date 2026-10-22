@@ -51,7 +51,7 @@ def export_questionnaire(path):
 
 
 def export_conversation(path):
-    conversation_id = path.parent.name
+    conversation_id = path.parent.parent.name if path.parent.name == "transcription" else path.parent.name
     df = pd.read_csv(path)
     speakers = df["speaker"].drop_duplicates().astype(str).tolist()
 
@@ -101,7 +101,9 @@ def main():
     requested = input("Conversation ID to export [ENTER = all]: ").strip()
 
     if requested:
-        transcripts = [p for p in transcripts if p.parent.name == requested]
+        transcripts = [p for p in transcripts if (
+            p.parent.parent.name if p.parent.name == "transcription" else p.parent.name
+        ) == requested]
         if not transcripts:
             raise ValueError(f"No conversation found with ID: {requested}")
 

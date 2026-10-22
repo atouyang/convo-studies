@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conversation Study — Instructions</title>
   <link rel="stylesheet" href="style.css">
-  <script src="router.js"></script>
+  <script src="router.js?v=20261022-fix1"></script>
 </head>
 <body>
 <main>
@@ -36,10 +36,7 @@
   }
 
   try {
-    const response = await fetch(`data/conversations/${encodeURIComponent(conversationId)}.json`);
-    if (!response.ok) throw new Error("Conversation file could not be loaded.");
-
-    const conversation = await response.json();
+    const conversation = await loadConversationData(conversationId);
     if (!conversation.speakers.includes(targetId)) {
       throw new Error("Selected target is not a speaker in this conversation.");
     }

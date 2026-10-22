@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conversation Study Launcher</title>
   <link rel="stylesheet" href="style.css">
+  <script src="router.js?v=20261022-fix1"></script>
   <style>
     .panel { border:1px solid var(--border); border-radius:8px; padding:24px; max-width:720px; }
     .field { margin-bottom:20px; }
     .field > label { display:block; font-weight:700; margin-bottom:8px; }
-    select, input[type="text"] { width:100%; padding:10px; }
+    select, input[type="text"] { width:100%; padding:10px; box-sizing:border-box; }
+    .input-hint { font-size:14px; color:var(--muted); margin-top:6px; }
     .debug-box { margin-top:26px; padding:18px; background:var(--soft); border:1px solid var(--border); border-radius:8px; }
     .debug-options { display:grid; gap:10px; margin-top:12px; }
     .inline { display:flex; align-items:center; gap:9px; }
@@ -19,17 +21,20 @@
 <body>
 <main>
   <h1>Conversation Study Launcher</h1>
-  <p class="muted">Open this page with Live Server, choose a conversation and target, then launch.</p>
+  <p class="muted">Enter a conversation ID, select the target speaker, then launch.</p>
 
   <div class="panel">
     <div class="field">
-      <label for="conversation">Conversation</label>
-      <select id="conversation"></select>
+      <label for="conversation">Conversation ID</label>
+      <input id="conversation" type="text" list="availableConversations"
+             placeholder="Enter convo_id" autocomplete="off" spellcheck="false">
+      <datalist id="availableConversations"></datalist>
+      <div id="conversationStatus" class="input-hint" role="status"></div>
     </div>
 
     <div class="field">
       <label for="target">Target speaker</label>
-      <select id="target"></select>
+      <select id="target" disabled></select>
     </div>
 
     <div class="field">
@@ -51,26 +56,37 @@
     </div>
 
     <div id="preview" class="url-preview"></div>
-    <button id="launch" style="margin-top:20px;">Launch study</button>
+    <button id="launch" style="margin-top:20px;" disabled>Launch study</button>
     <div id="error" class="error hidden"></div>
   </div>
 </main>
 
 <script>
 (async function () {
-  const conversationSelect = document.getElementById("conversation");
+  const conversationInput = document.getElementById("conversation");
+  const availableConversations = document.getElementById("availableConversations");
+  const conversationStatus = document.getElementById("conversationStatus");
   const targetSelect = document.getElementById("target");
+  const launchButton = document.getElementById("launch");
   const participantInput = document.getElementById("participant");
   const debugCheckbox = document.getElementById("debug");
   const debugOptions = document.getElementById("debugOptions");
   const preview = document.getElementById("preview");
   const errorBox = document.getElementById("error");
+  const urlParams = new URLSearchParams(location.search);
 
-  let manifest = [];
+  let loadedConversationId = null;
+  let requestNumber = 0;
+  let debounceId = null;
 
   function fail(message) {
     errorBox.classList.remove("hidden");
     errorBox.textContent = message;
+  }
+
+  function clearError() {
+    errorBox.classList.add("hidden");
+    errorBox.textContent = "";
   }
 
   function skipped() {
@@ -79,7 +95,7 @@
 
   function params() {
     const p = new URLSearchParams();
-    p.set("conversation_id", conversationSelect.value);
+    p.set("conversation_id", loadedConversationId);
     p.set("target_id", targetSelect.value);
 
     const participantId = participantInput.value.trim();
@@ -110,44 +126,74 @@
   }
 
   function updatePreview() {
-    if (!conversationSelect.value || !targetSelect.value) return;
+    if (!loadedConversationId || !targetSelect.value) {
+      preview.textContent = "";
+      return;
+    }
     preview.textContent = `${filename(firstStage())}?${params().toString()}`;
   }
 
-  try {
-    const response = await fetch("data/conversations.json");
-    if (!response.ok) throw new Error("Could not load data/conversations.json");
-    manifest = await response.json();
-  } catch (error) {
-    fail(error.message);
-    return;
-  }
-
-  for (const convo of manifest) {
-    const opt = document.createElement("option");
-    opt.value = convo.conversation_id;
-    opt.textContent = `${convo.conversation_id} (${convo.n_utterances} utterances)`;
-    conversationSelect.appendChild(opt);
-  }
-
-  function populateTargets() {
-    const convo = manifest.find(x => x.conversation_id === conversationSelect.value);
+  async function populateTargets() {
+    const id = conversationInput.value.trim();
+    const currentRequest = ++requestNumber;
+    loadedConversationId = null;
     targetSelect.innerHTML = "";
-    if (!convo) return;
-
-    for (const speaker of convo.speakers) {
-      const opt = document.createElement("option");
-      opt.value = speaker;
-      opt.textContent = speaker;
-      targetSelect.appendChild(opt);
-    }
+    targetSelect.disabled = true;
+    launchButton.disabled = true;
     updatePreview();
+    clearError();
+    if (!id) {
+      conversationStatus.textContent = "Enter a conversation ID.";
+      return;
+    }
+
+    conversationStatus.textContent = "Loading conversation…";
+    try {
+      const conversation = await loadConversationData(id);
+      // Ignore responses from earlier requests when the input was changed.
+      if (currentRequest !== requestNumber || id !== conversationInput.value.trim()) return;
+      if (!Array.isArray(conversation.speakers) || !conversation.speakers.length) {
+        throw new Error("No speakers found in this conversation.");
+      }
+      for (const speaker of conversation.speakers) {
+        const opt = document.createElement("option");
+        opt.value = speaker;
+        opt.textContent = speaker;
+        targetSelect.appendChild(opt);
+      }
+      // Allow deep links with both ?convo_id=...&target_id=...
+      const requestedTarget = urlParams.get("target_id");
+      if (requestedTarget && conversation.speakers.includes(requestedTarget)) {
+        targetSelect.value = requestedTarget;
+      }
+
+      loadedConversationId = id;
+      targetSelect.disabled = false;
+      launchButton.disabled = false;
+      conversationStatus.textContent = `${conversation.utterances.length} utterances loaded; ${conversation.speakers.length} speakers`;
+      updatePreview();
+    } catch (error) {
+      if (currentRequest !== requestNumber) return;
+      conversationStatus.textContent = "";
+      fail(error.message);
+    }
   }
 
-  conversationSelect.addEventListener("change", populateTargets);
+  conversationInput.addEventListener("input", function () {
+    clearTimeout(debounceId);
+    // Immediately prevent launching the previously selected conversation.
+    loadedConversationId = null;
+    launchButton.disabled = true;
+    targetSelect.disabled = true;
+    updatePreview();
+    debounceId = setTimeout(populateTargets, 350);
+  });
+  conversationInput.addEventListener("change", function () {
+    clearTimeout(debounceId);
+    populateTargets();
+  });
   targetSelect.addEventListener("change", updatePreview);
   participantInput.addEventListener("input", updatePreview);
-
   debugCheckbox.addEventListener("change", function () {
     debugOptions.classList.toggle("hidden", !debugCheckbox.checked);
     if (!debugCheckbox.checked) {
@@ -155,20 +201,37 @@
     }
     updatePreview();
   });
-
   document.querySelectorAll(".skip-stage").forEach(x => {
     x.addEventListener("change", updatePreview);
   });
 
-  populateTargets();
-
-  document.getElementById("launch").addEventListener("click", function () {
-    const stage = firstStage();
-    window.location.href = `${filename(stage)}?${params().toString()}`;
+  launchButton.addEventListener("click", function () {
+    if (!loadedConversationId || !targetSelect.value) return;
+    window.location.href = `${filename(firstStage())}?${params().toString()}`;
   });
+
+  // Keep the existing pre-exported conversations as input suggestions, without
+  // restricting entry to that manifest (arbitrary convo_id values are valid).
+  let manifest = [];
+  try {
+    const response = await fetch("data/conversations.json");
+    if (response.ok) manifest = await response.json();
+  } catch (_) {
+    // The manifest is optional when using CSV files through the Python server.
+  }
+  for (const convo of manifest) {
+    const opt = document.createElement("option");
+    opt.value = convo.conversation_id;
+    opt.label = `${convo.n_utterances} utterances`;
+    availableConversations.appendChild(opt);
+  }
+
+  // ?convo_id=... is the convenient URL interface; ?conversation_id=... also works.
+  conversationInput.value = urlParams.get("convo_id") ||
+                            urlParams.get("conversation_id") ||
+                            (manifest.length ? manifest[0].conversation_id : "");
+  await populateTargets();
 })();
 </script>
 </body>
 </html>
-
-<script src="conversation-switcher.js"></script>

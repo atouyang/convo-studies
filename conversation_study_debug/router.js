@@ -3,7 +3,7 @@ function getStudyParams() {
   const params = new URLSearchParams(window.location.search);
   return {
     params,
-    conversationId: params.get("conversation_id"),
+    conversationId: params.get("conversation_id") || params.get("convo_id"),
     targetId: params.get("target_id"),
     participantId: params.get("participant_id"),
     debug: params.get("debug") === "1",
@@ -45,3 +45,39 @@ function routeIfCurrentStageSkipped(currentStage) {
   }
   return false;
 }
+
+// Return the same { conversation_id, speakers, utterances } object for either
+// a live Cliffhanger CSV (served by conversation_server.py) or an existing
+// pre-exported data/conversations/<id>.json file.
+window.loadConversationData = async function loadConversationData(conversationId) {
+  const id = String(conversationId || "").trim();
+  if (!/^[A-Za-z0-9_-]+$/.test(id)) {
+    throw new Error("Enter a valid conversation ID (letters, numbers, _ or -).");
+  }
+
+  let apiFailure = null;
+  try {
+    const response = await fetch(`/api/conversations/${encodeURIComponent(id)}`, {
+      cache: "no-store"
+    });
+    if (response.ok) return await response.json();
+
+    const body = (response.headers.get("content-type") || "").includes("application/json")
+      ? await response.json()
+      : {};
+    apiFailure = body.expected_path
+      ? `${body.error}: ${body.expected_path}`
+      : (body.error || `Conversation API returned HTTP ${response.status}`);
+  } catch (error) {
+    apiFailure = error.message;
+  }
+
+  // Preserve the demo's example and any conversations previously exported as JSON.
+  const fallback = await fetch(`data/conversations/${encodeURIComponent(id)}.json`);
+  if (fallback.ok) return await fallback.json();
+
+  throw new Error(
+    `${apiFailure || "Conversation not found"}. ` +
+    "For CSV transcripts, run 'python conversation_server.py' instead of Live Server."
+  );
+};
