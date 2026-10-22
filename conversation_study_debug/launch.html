@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Study Launcher</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .panel { border:1px solid var(--border); border-radius:8px; padding:24px; max-width:720px; }
+    .field { margin-bottom:20px; }
+    .field > label { display:block; font-weight:700; margin-bottom:8px; }
+    select, input[type="text"] { width:100%; padding:10px; }
+    .debug-box { margin-top:26px; padding:18px; background:var(--soft); border:1px solid var(--border); border-radius:8px; }
+    .debug-options { display:grid; gap:10px; margin-top:12px; }
+    .inline { display:flex; align-items:center; gap:9px; }
+    .url-preview { margin-top:20px; padding:12px; background:var(--soft); overflow-wrap:anywhere; font-family:monospace; font-size:14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Conversation Study Launcher</h1>
+  <p class="muted">Open this page with Live Server, choose a conversation and target, then launch.</p>
+
+  <div class="panel">
+    <div class="field">
+      <label for="conversation">Conversation</label>
+      <select id="conversation"></select>
+    </div>
+
+    <div class="field">
+      <label for="target">Target speaker</label>
+      <select id="target"></select>
+    </div>
+
+    <div class="field">
+      <label for="participant">Participant ID (optional)</label>
+      <input id="participant" type="text" placeholder="Generated automatically if blank">
+    </div>
+
+    <div class="debug-box">
+      <label class="inline">
+        <input id="debug" type="checkbox">
+        <strong>Debug mode</strong>
+      </label>
+
+      <div id="debugOptions" class="debug-options hidden">
+        <label class="inline"><input class="skip-stage" type="checkbox" value="1">Skip Stage 1 — instructions</label>
+        <label class="inline"><input class="skip-stage" type="checkbox" value="2">Skip Stage 2 — transcript</label>
+        <label class="inline"><input class="skip-stage" type="checkbox" value="3">Skip Stage 3 — questionnaire</label>
+      </div>
+    </div>
+
+    <div id="preview" class="url-preview"></div>
+    <button id="launch" style="margin-top:20px;">Launch study</button>
+    <div id="error" class="error hidden"></div>
+  </div>
+</main>
+
+<script>
+(async function () {
+  const conversationSelect = document.getElementById("conversation");
+  const targetSelect = document.getElementById("target");
+  const participantInput = document.getElementById("participant");
+  const debugCheckbox = document.getElementById("debug");
+  const debugOptions = document.getElementById("debugOptions");
+  const preview = document.getElementById("preview");
+  const errorBox = document.getElementById("error");
+
+  let manifest = [];
+
+  function fail(message) {
+    errorBox.classList.remove("hidden");
+    errorBox.textContent = message;
+  }
+
+  function skipped() {
+    return [...document.querySelectorAll(".skip-stage:checked")].map(x => x.value);
+  }
+
+  function params() {
+    const p = new URLSearchParams();
+    p.set("conversation_id", conversationSelect.value);
+    p.set("target_id", targetSelect.value);
+
+    const participantId = participantInput.value.trim();
+    if (participantId) p.set("participant_id", participantId);
+
+    if (debugCheckbox.checked) {
+      p.set("debug", "1");
+      const s = skipped();
+      if (s.length) p.set("skip", s.join(","));
+    }
+    return p;
+  }
+
+  function firstStage() {
+    if (!debugCheckbox.checked) return 1;
+    const s = new Set(skipped());
+    for (let stage = 1; stage <= 3; stage++) {
+      if (!s.has(String(stage))) return stage;
+    }
+    return 4;
+  }
+
+  function filename(stage) {
+    if (stage === 1) return "stage1_instructions.html";
+    if (stage === 2) return "stage2_transcript.html";
+    if (stage === 3) return "stage3_questionnaire.html";
+    return "complete.html";
+  }
+
+  function updatePreview() {
+    if (!conversationSelect.value || !targetSelect.value) return;
+    preview.textContent = `${filename(firstStage())}?${params().toString()}`;
+  }
+
+  try {
+    const response = await fetch("data/conversations.json");
+    if (!response.ok) throw new Error("Could not load data/conversations.json");
+    manifest = await response.json();
+  } catch (error) {
+    fail(error.message);
+    return;
+  }
+
+  for (const convo of manifest) {
+    const opt = document.createElement("option");
+    opt.value = convo.conversation_id;
+    opt.textContent = `${convo.conversation_id} (${convo.n_utterances} utterances)`;
+    conversationSelect.appendChild(opt);
+  }
+
+  function populateTargets() {
+    const convo = manifest.find(x => x.conversation_id === conversationSelect.value);
+    targetSelect.innerHTML = "";
+    if (!convo) return;
+
+    for (const speaker of convo.speakers) {
+      const opt = document.createElement("option");
+      opt.value = speaker;
+      opt.textContent = speaker;
+      targetSelect.appendChild(opt);
+    }
+    updatePreview();
+  }
+
+  conversationSelect.addEventListener("change", populateTargets);
+  targetSelect.addEventListener("change", updatePreview);
+  participantInput.addEventListener("input", updatePreview);
+
+  debugCheckbox.addEventListener("change", function () {
+    debugOptions.classList.toggle("hidden", !debugCheckbox.checked);
+    if (!debugCheckbox.checked) {
+      document.querySelectorAll(".skip-stage").forEach(x => x.checked = false);
+    }
+    updatePreview();
+  });
+
+  document.querySelectorAll(".skip-stage").forEach(x => {
+    x.addEventListener("change", updatePreview);
+  });
+
+  populateTargets();
+
+  document.getElementById("launch").addEventListener("click", function () {
+    const stage = firstStage();
+    window.location.href = `${filename(stage)}?${params().toString()}`;
+  });
+})();
+</script>
+</body>
+</html>

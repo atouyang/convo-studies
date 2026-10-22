@@ -1,0 +1,1834 @@
+{
+  "conversation_id": "example_conversation",
+  "speakers": [
+    "5e5ca080bb37ff47b09dd4cc",
+    "5f17821d53d8590009cfc951"
+  ],
+  "utterances": [
+    {
+      "turn_id": 0,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh hi hi how are you?"
+    },
+    {
+      "turn_id": 1,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Hello? All right just started a timer so we don't go over or under."
+    },
+    {
+      "turn_id": 2,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Nice. Yeah I like your back."
+    },
+    {
+      "turn_id": 3,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "No. Yeah."
+    },
+    {
+      "turn_id": 4,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Is that your I was gonna say I like your background."
+    },
+    {
+      "turn_id": 5,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh yeah yeah I'm sitting in my bedroom. I have an office but I would rather bring the total or home and office right by the front doors and loud."
+    },
+    {
+      "turn_id": 6,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Oh okay. Yeah. Yeah."
+    },
+    {
+      "turn_id": 7,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So where are you from?"
+    },
+    {
+      "turn_id": 8,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Uh I'm out here in California, how about you Alabama?"
+    },
+    {
+      "turn_id": 9,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. In Alabama, mm."
+    },
+    {
+      "turn_id": 10,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh wow okay this is so weird. So I had a chat with someone else I think a few weeks ago and he was also from Alabama. So yeah I don't know it was weird because I was like my first time I think meeting someone from Alabama."
+    },
+    {
+      "turn_id": 11,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh. Mhm. Well Small World Huntsville."
+    },
+    {
+      "turn_id": 12,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah very small. Yeah. What um part of Alabama like just."
+    },
+    {
+      "turn_id": 13,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "If you've heard of it it's like Silicon Valley of the south."
+    },
+    {
+      "turn_id": 14,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 15,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "If you will like the engineering hub of Alabama, that's where they built the Saturn five that took you know Apollo 11 up."
+    },
+    {
+      "turn_id": 16,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. I have yeah."
+    },
+    {
+      "turn_id": 17,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So yeah."
+    },
+    {
+      "turn_id": 18,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right. Nice. Okay. Yeah I have heard of Huntsville I think like after my talk a few weeks ago I got to know I got to get a little bit more familiar with them Alabama's geography so yeah um Northern California."
+    },
+    {
+      "turn_id": 19,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. What part of California from?"
+    },
+    {
+      "turn_id": 20,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So near near san Francisco. Um Yeah."
+    },
+    {
+      "turn_id": 21,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. Okay. I have a friend that lives, I think he looks in san Jose."
+    },
+    {
+      "turn_id": 22,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Mhm. Oh nice. That's not too far from yeah pretty pretty close."
+    },
+    {
+      "turn_id": 23,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 24,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um Yeah I guess is this your I assume this isn't your first time doing this chat or?"
+    },
+    {
+      "turn_id": 25,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. This is my third one. So what about you?"
+    },
+    {
+      "turn_id": 26,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "They're nice. Okay. Yeah, I would say like maybe I think four or five, so yeah, do you usually like these chats or you're just like Mhm."
+    },
+    {
+      "turn_id": 27,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. Yeah. Yeah. Well they've actually been pretty good thus far. The first, well both of them have been kind of awkward because you know if you talk injured on the computer but no they've gone pretty well."
+    },
+    {
+      "turn_id": 28,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 29,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So what that means one."
+    },
+    {
+      "turn_id": 30,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah, I think my might have gone pretty well except for the last one, which is what the other guy from Alabama."
+    },
+    {
+      "turn_id": 31,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh wow."
+    },
+    {
+      "turn_id": 32,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, I mean yeah, no I think you're ready or I think he was in college so I think maybe he was still right figuring things out and he had a roommate in the background so it was just like I would talk to you and it would be moving around so it's a little distracting, you know?"
+    },
+    {
+      "turn_id": 33,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I hope I look a better impression than he did so Yeah. Mhm, mm."
+    },
+    {
+      "turn_id": 34,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "But I mean all good, you know what do you do like for I guess did today occupation or?"
+    },
+    {
+      "turn_id": 35,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mhm. Yeah, I actually work for Nasa, I'm a flight controller, International Space Station."
+    },
+    {
+      "turn_id": 36,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh that's okay, wow, that's awesome."
+    },
+    {
+      "turn_id": 37,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "What about you?"
+    },
+    {
+      "turn_id": 38,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um I work, I don't know if you've heard a product design, so I designed like digital, like websites and applications."
+    },
+    {
+      "turn_id": 39,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mhm. Mhm."
+    },
+    {
+      "turn_id": 40,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um Yeah, and political science, so completely yeah, exactly."
+    },
+    {
+      "turn_id": 41,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. What what was your degree in? Oh, so that's like 1 80 right there."
+    },
+    {
+      "turn_id": 42,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "A big, big 1 80 I think the nice thing about design is like, at least here in California is like, a lot of people aren't from design backgrounds and they're able to still transition."
+    },
+    {
+      "turn_id": 43,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Right. Mhm. Mhm."
+    },
+    {
+      "turn_id": 44,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So it's been nice."
+    },
+    {
+      "turn_id": 45,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah, that's good."
+    },
+    {
+      "turn_id": 46,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "It's been challenging, but yeah, that's cool."
+    },
+    {
+      "turn_id": 47,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. How long have you been doing that?"
+    },
+    {
+      "turn_id": 48,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um say 2, 3 years. So uh yeah, not not too long."
+    },
+    {
+      "turn_id": 49,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. What? What?"
+    },
+    {
+      "turn_id": 50,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I still feel like this industry changes so much and I don't know, you heard like Apple released the new iphone right about a week ago or something and the mobile designs difference now we have to go back and like, it's basically like on you as a designer to like learn about yeah, older designs and it's like, yeah, it's a lot, it's, and then google like reed is not rebranded to, I think like if you look at their icons now and it's just like, I don't know, it's just a lot to like really like taken at once, but it's good and I love what I do."
+    },
+    {
+      "turn_id": 51,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh. Uh huh. What? Mm hmm. Yeah. What? Oh okay. Yeah. Yeah. Yeah. Mhm. Yeah."
+    },
+    {
+      "turn_id": 52,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So um yeah, um I used to be in recruiting so completely different."
+    },
+    {
+      "turn_id": 53,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah, that's good. How did you get into that?"
+    },
+    {
+      "turn_id": 54,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I feel like life has been like a ton of one eighties, but so you know, honestly, really good experiences and I used to recruit for designers and I think just talking to them, I got to know them better and they were really encouraging and supportive lee."
+    },
+    {
+      "turn_id": 55,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh. What? Oh. Mhm, mm hmm."
+    },
+    {
+      "turn_id": 56,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So once I met, so I am sure, you know, every industry has great and not not so great folks. Um and they just really encouraged me to kind of go for and ever since then, I don't think I've looked back and I'm pretty happy to be here."
+    },
+    {
+      "turn_id": 57,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Uh huh. Uh It's mean what?"
+    },
+    {
+      "turn_id": 58,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So yeah, I was gonna ask, how did you get into Nasa?"
+    },
+    {
+      "turn_id": 59,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 60,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I'm sure others might have asked you, but I'm really curious."
+    },
+    {
+      "turn_id": 61,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. I'm sorry, I just kept spitballing questions and didn't give you talking."
+    },
+    {
+      "turn_id": 62,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 63,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So actually it was a dream of mine when uh I was uh I was and I always wanted to be an astronaut growing up and well this is just little an anecdote."
+    },
+    {
+      "turn_id": 64,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Oh yeah."
+    },
+    {
+      "turn_id": 65,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But uh my brother when I was in like first grade watching the movie Apollo 13 and I was talking about I wanted to be an astronaut and then he made some comment like well they don't just let anybody be an astronaut."
+    },
+    {
+      "turn_id": 66,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah. Yeah. And yeah."
+    },
+    {
+      "turn_id": 67,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "People aren't getting up end up in the showroom and I am."
+    },
+    {
+      "turn_id": 68,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 69,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But no it was um I got my degree in civil engineering and uh basically like I started metallurgical engineering and honestly would have been better filled, you know, if I wanted to work at Nasa."
+    },
+    {
+      "turn_id": 70,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Okay. Mm. Yeah. Mhm. Okay. Yeah. Mhm."
+    },
+    {
+      "turn_id": 71,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But uh I guess I took the cop out of civil engineering were easier."
+    },
+    {
+      "turn_id": 72,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 73,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But anyway I worked several jobs like one uh started out in the Birmingham area, worked for a culture, you got laid off here and then you know, I'm one I say so I better get back out there except originally from this area and you know, foreign parents live in all."
+    },
+    {
+      "turn_id": 74,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Yeah. Trouble. Mhm. Mhm. Yeah. Yeah. Okay, wow."
+    },
+    {
+      "turn_id": 75,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But anyway, ended up getting back up here and got a civil engineering job here."
+    },
+    {
+      "turn_id": 76,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay."
+    },
+    {
+      "turn_id": 77,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Honestly, it was like right place, right time type deal. I had a buddy over there and on my resume off and here I am."
+    },
+    {
+      "turn_id": 78,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. Yeah."
+    },
+    {
+      "turn_id": 79,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So about four years I started july or august 2016."
+    },
+    {
+      "turn_id": 80,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "That's fantastic. Yeah. That's awesome. How long have you been been at Nasa? Wow, okay."
+    },
+    {
+      "turn_id": 81,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So, uh, well, mhm."
+    },
+    {
+      "turn_id": 82,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So just a little that's awesome. That's, I mean when you say like going back to what you said, like civil engineering was a cop out like what was this kind of like something I don't know because I'm not too familiar with the civil versus like mechanical engineering, but was it like considered the easier, like major by engineers are?"
+    },
+    {
+      "turn_id": 83,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Okay. Kind of, yeah, it kind of was, yeah."
+    },
+    {
+      "turn_id": 84,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay, interesting."
+    },
+    {
+      "turn_id": 85,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Um, so basically civil engineering, it actually got its name in to Rome back then."
+    },
+    {
+      "turn_id": 86,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right, mm. Mhm."
+    },
+    {
+      "turn_id": 87,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "They had two different types of engineers. Military engineers and civil engineers are in engineers I guess."
+    },
+    {
+      "turn_id": 88,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 89,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So, civil engineers."
+    },
+    {
+      "turn_id": 90,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 91,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So just what they had back in Rome, that would need an engineering."
+    },
+    {
+      "turn_id": 92,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 93,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So that's like roads and waterways and stuff like that."
+    },
+    {
+      "turn_id": 94,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 95,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So like sitting in construction, whatnot."
+    },
+    {
+      "turn_id": 96,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right. Okay. That's interesting, wow, that's yeah, that's no, that's super great."
+    },
+    {
+      "turn_id": 97,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "What?"
+    },
+    {
+      "turn_id": 98,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I mean so now that like when you and your brother meet up like is he kind of just like, oh so you actually did make it to Nasa with your dream job?"
+    },
+    {
+      "turn_id": 99,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mm hmm. I don't need to think he remembered that, but shortly after I got hired, I brought it up to him and you know, we kind of had a good laugh."
+    },
+    {
+      "turn_id": 100,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Really? Okay. Yeah. Yeah."
+    },
+    {
+      "turn_id": 101,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 102,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Oh that's awesome."
+    },
+    {
+      "turn_id": 103,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm Yeah."
+    },
+    {
+      "turn_id": 104,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "It might seem like a smoothie. I was watching about the first like female indian pilot and how she had made a comment to her brother about how she wanted to be a pilot and he had told her oh it's only like there's like no woman who like fly helicopters and then she actually ended up being like the first pilot in female pilot in India."
+    },
+    {
+      "turn_id": 105,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Right. Mhm Yeah, mm hmm."
+    },
+    {
+      "turn_id": 106,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So I don't know that comment was like very uh interesting. Yeah but typical assembly like rivalry or whatever."
+    },
+    {
+      "turn_id": 107,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Yeah, I've pretty much been, well I've lived in the state, my whole kind of moved around the state, but really like I've lived here and Birmingham, which is uh largest city in Alabama, largest city in Alabama."
+    },
+    {
+      "turn_id": 108,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, that's cool. Okay. So have you been in Alabama like your entire life or have you moved out of state or other? Yeah. Mhm. Mhm. Mhm. Mhm. Okay. Mhm, mm."
+    },
+    {
+      "turn_id": 109,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I'm compared to like you know where you're from, It's like I mean it's like I'm talking 200,000 people so you know, pretty small er log serving."
+    },
+    {
+      "turn_id": 110,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Mhm. Yeah, A big, big difference, yeah."
+    },
+    {
+      "turn_id": 111,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Um and then I lived in a test Colusa for a few years, that's where the university of Alabama is so player and then lived there for a couple years after I graduated so I've just kind of hung around the state."
+    },
+    {
+      "turn_id": 112,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah. Okay. Okay. Yeah. Yeah, it seems like you've gone okay, so, but I guess like now, right, like you're an ass and everything, like do you feel like in the future you want to move to different states, you're pretty subtle set on Alabama for now?"
+    },
+    {
+      "turn_id": 113,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So what? Uh huh. Um I'm pretty set on Alabama depending on if any opportunities pop open."
+    },
+    {
+      "turn_id": 114,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. It's just anything."
+    },
+    {
+      "turn_id": 115,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "That might be a discussion that, you know, my wife and I have like, like Houston of course that's where Nasa's this home."
+    },
+    {
+      "turn_id": 116,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Mhm, mm. Right, right, that's another, yeah."
+    },
+    {
+      "turn_id": 117,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So it's, I mean it's unlikely, but I definitely be up to if like the right thing came open, I do kinda would have like live somewhere else."
+    },
+    {
+      "turn_id": 118,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah."
+    },
+    {
+      "turn_id": 119,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "You know when I got out of college just experienced things."
+    },
+    {
+      "turn_id": 120,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Right, right."
+    },
+    {
+      "turn_id": 121,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But boy Oh, probably out west like colorado or Yeah."
+    },
+    {
+      "turn_id": 122,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I guess if you were to pick another state or states that you wanted to live in, what what would those be? Oh thanks to? Yeah, yeah, I haven't, yeah, that's a good, I feel like I'm interviewing you, but anyways uh gosh, I would say, I don't know like the um New England Area, I don't know something about it just seems really appealing, like the historical charm."
+    },
+    {
+      "turn_id": 123,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah, definitely say Denver. The Denver would be my number one short. What about you? Okay. Yeah. Oh that would be neat."
+    },
+    {
+      "turn_id": 124,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah and I don't know why I lately I've been obsessed with clam chowder and and yeah right it's just like and I went to see we were in Seattle and Seattle has like a really good clam chowder place, like it's like one of those iconic touristy places, but I just don't think it would be as comparable to New England clam chowder, which is like right, that original."
+    },
+    {
+      "turn_id": 125,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm And I don't, I love crimes ever. Ah Oh yeah. Mhm Right."
+    },
+    {
+      "turn_id": 126,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, so I don't know why that, but I don't know, I think there'd be some kind of like rustic charm out there, that would be yeah like very different."
+    },
+    {
+      "turn_id": 127,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah, that would be me. Like kind of seems like, I don't know what I picture outside of like boston, especially further up north is just like the small town, you know, like that would be chemical."
+    },
+    {
+      "turn_id": 128,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Mhm. Yeah. Yes yeah, that's exactly what I yeah yeah it would be really nice to get out but yeah okay temper um I have another question and I just completely blanked. Yeah so yeah okay I completely, I had a question about Nasa news, okay never mind, I forgot what I was gonna ask."
+    },
+    {
+      "turn_id": 129,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah. Mhm. Yeah. Mhm. Uh huh. Well yeah yeah I'm still here for about 17 more minutes."
+    },
+    {
+      "turn_id": 130,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "It's been a long long friday but yeah California."
+    },
+    {
+      "turn_id": 131,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "If you think so, if you live there you have left."
+    },
+    {
+      "turn_id": 132,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah pretty much. So it seems like I feel like I just hopped around between the bay area and central California, so I'm also kind of curious to see what like what other states kind of hold you know?"
+    },
+    {
+      "turn_id": 133,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah. Right."
+    },
+    {
+      "turn_id": 134,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um Yeah."
+    },
+    {
+      "turn_id": 135,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh okay, mm."
+    },
+    {
+      "turn_id": 136,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah I mean I feel like just being in this like tech bubble here, it's like you're exposed to one way of life and it's like well I think that was appealing in college now not so much like right as you're looking for like more meaningful things as opposed to like I don't know status or um like material items for instance but yeah."
+    },
+    {
+      "turn_id": 137,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Right okay. Yeah yeah yeah that's understandable. I did uh let's see, I did go on a job interview in Wyoming."
+    },
+    {
+      "turn_id": 138,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 139,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "This was that was kinda cool."
+    },
+    {
+      "turn_id": 140,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh okay. Yeah."
+    },
+    {
+      "turn_id": 141,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "It was, I was when I was working for coal mine that was my first job out of college and of course you know the coal industry has kind of been circling the drain for several years."
+    },
+    {
+      "turn_id": 142,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Mhm. Mhm. Oh wow okay, that's neat. Right."
+    },
+    {
+      "turn_id": 143,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I ended up getting laid off there and that's when I get back up here and I would work for like nine months."
+    },
+    {
+      "turn_id": 144,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Mhm."
+    },
+    {
+      "turn_id": 145,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I well I was hosting trivia, local restaurants so not totally out of work but you know um and anyway it would have been cool to live out there for a while."
+    },
+    {
+      "turn_id": 146,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Have been completed yeah. Right. Yeah. Mhm. Mhm."
+    },
+    {
+      "turn_id": 147,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I was the lady that was interviewing me like the town it was, the company was in was like a town of 1000."
+    },
+    {
+      "turn_id": 148,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah mm."
+    },
+    {
+      "turn_id": 149,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So he was taking me around the town, showing me everything and I made the comment you know I haven't seen anything like grocery stores or anything out here."
+    },
+    {
+      "turn_id": 150,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, yeah, Yeah."
+    },
+    {
+      "turn_id": 151,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So where do you all do your grocery shopping?"
+    },
+    {
+      "turn_id": 152,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right Oh yeah, that was, but, yep."
+    },
+    {
+      "turn_id": 153,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh well Casper is only two hours away and as a walmart so. Oh yeah maybe if I hit the powerball via cabin there."
+    },
+    {
+      "turn_id": 154,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. So then where did they buy their groceries? Just, they all went to, They drove two hours to Walmart."
+    },
+    {
+      "turn_id": 155,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah pretty much dropped to Sam's clubs fucked up. And now they did have like some smaller like mom and pop just like general stores but like no full on grocery store."
+    },
+    {
+      "turn_id": 156,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Pretty serious, wow, Okay. Yeah. Right, where you could like stock up?"
+    },
+    {
+      "turn_id": 157,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 158,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh, that's right."
+    },
+    {
+      "turn_id": 159,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 160,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And I would imagine like the winters in Wyoming a pretty brutal, right? I don't know what the weather was."
+    },
+    {
+      "turn_id": 161,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah I would imagine they are like a 11 experience that you know the answer but it was february when I went a being from Alabama never actually seen real snow was pretty neat so like they were just I was driving through Yellowstone on the the town, it was like two hour drive to Yellowstone, there was uh the roads were all plowed and also there weren't any issues there but there were it snow on the ground, so it's really cool."
+    },
+    {
+      "turn_id": 162,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm, mhm Yeah, yeah. Oh, hmm. Yeah. Mhm, mhm Yeah."
+    },
+    {
+      "turn_id": 163,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So Yeah."
+    },
+    {
+      "turn_id": 164,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh, that's awesome. Well, okay, so you acted, you didn't end up taking good job."
+    },
+    {
+      "turn_id": 165,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "What? No, no I actually got offered and but right before I got offered there I got offered with a civil engineering firm here."
+    },
+    {
+      "turn_id": 166,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. And then that was what? Okay, so you, do you think like if you have not received that offer from the civil engineer from, you might have taken off?"
+    },
+    {
+      "turn_id": 167,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Yeah. Oh I probably would have because I was pretty good at that point."
+    },
+    {
+      "turn_id": 168,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, Yeah."
+    },
+    {
+      "turn_id": 169,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh Yeah and it would have, I think it would have been cool to live there for like a year to you know."
+    },
+    {
+      "turn_id": 170,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay, so that was like, let me yeah. All right. Yeah, I agree. I feel like when I was a pretty nice day, like we also went to Yellowstone and we went in june but even, I remember like in june at night the temperatures would drop to like the thirties or twenties and great."
+    },
+    {
+      "turn_id": 171,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Mhm."
+    },
+    {
+      "turn_id": 172,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Obviously like mentioned California is pretty warm too. So I never experienced such cold weather in like summer."
+    },
+    {
+      "turn_id": 173,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Uh huh."
+    },
+    {
+      "turn_id": 174,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So, um, I'm gonna go ahead."
+    },
+    {
+      "turn_id": 175,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah I'm sorry the okay I felt like I kicked off then."
+    },
+    {
+      "turn_id": 176,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I was, yeah, yeah."
+    },
+    {
+      "turn_id": 177,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "One thing that was interesting to me was uh like it is super super humid here, like it's like in summers it's like just so gross outside, you know?"
+    },
+    {
+      "turn_id": 178,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm, mhm, mhm. Yeah."
+    },
+    {
+      "turn_id": 179,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Um But anyway, you know of course, no, not much community in Wyoming and was here how much of a difference it makes in the heat?"
+    },
+    {
+      "turn_id": 180,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm, mm hmm."
+    },
+    {
+      "turn_id": 181,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But well that's how much a difference made in the cold. Like I went to the state park after the interview and was walking around and I ended up just happen to like shed to my thermal undershirt because I was starting to burn up you know like because it was like 12 degrees outside but when I was and around it and it it didn't feel like what 12 degrees would have felt like here."
+    },
+    {
+      "turn_id": 182,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, wow. Yeah. Yeah. Yeah. Right."
+    },
+    {
+      "turn_id": 183,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So that was kind of, I don't know, that was just interesting to me because I expected I guess."
+    },
+    {
+      "turn_id": 184,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Right, okay."
+    },
+    {
+      "turn_id": 185,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But yeah."
+    },
+    {
+      "turn_id": 186,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right. That is pretty interesting. I never, yeah, I mean, I guess like what, like does that Alabama like what are the seasons kind of like that?"
+    },
+    {
+      "turn_id": 187,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh. Mhm."
+    },
+    {
+      "turn_id": 188,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Because all I know is like it's hot and humid and that's like the mhm."
+    },
+    {
+      "turn_id": 189,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah, a summer more summer a little more about a week or fall. And we've actually had a pretty decent fall this year, like it was 80 degrees today and it has been for the past week, but drip that dropped down to like 60 and 70 you know like september and october winters."
+    },
+    {
+      "turn_id": 190,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay, mm. Okay. That's it, wow. Yeah. Yeah. Yeah."
+    },
+    {
+      "turn_id": 191,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I mean they don't get like we don't get blues or anything, they kind of suck like get some 20 thirties somehow into the teens at all."
+    },
+    {
+      "turn_id": 192,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Mhm, mhm, mhm, mm."
+    },
+    {
+      "turn_id": 193,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But I mean it's I don't know hard for me to describe because I don't really know what the seasons are."
+    },
+    {
+      "turn_id": 194,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 195,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "You know, you like relative to you, but it's it's hot for most of the year."
+    },
+    {
+      "turn_id": 196,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Right, okay. I see. So that's like, so like, yeah, and then like it's hard to get humid. I am assuming in like june or earlier."
+    },
+    {
+      "turn_id": 197,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah, pretty much why?"
+    },
+    {
+      "turn_id": 198,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. And the team it all the way to like september or Okay. Oh, that's rough. Yeah. Yeah. Like here it's not a human, right? Like we live in the valley, so it's really dry. And I remember like when I went to new york for a week and it was the hottest week in new york in 2018, I was like over 100 degrees."
+    },
+    {
+      "turn_id": 199,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Mhm."
+    },
+    {
+      "turn_id": 200,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And you know how like, there's like no A. C. And you know, there's all those little portable ones because usually new york just to get the hot and it was so humid."
+    },
+    {
+      "turn_id": 201,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Right."
+    },
+    {
+      "turn_id": 202,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I remember we were like walking around at seven a.m. And we're just like covered in sweat like by eight."
+    },
+    {
+      "turn_id": 203,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mhm."
+    },
+    {
+      "turn_id": 204,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And it's like, that's crazy. But I feel like my skin was like the best it was that week. Whereas I hear, I feel like something about the lack of humidity and that central valley or kind of like makes you like perpetually dry."
+    },
+    {
+      "turn_id": 205,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh. Mhm."
+    },
+    {
+      "turn_id": 206,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Like even in the summer, winters are really bad for like anyone."
+    },
+    {
+      "turn_id": 207,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 208,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I think if you have dry skin or any skin conditions."
+    },
+    {
+      "turn_id": 209,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah, I do remember when we went to Denver like my lips were getting like really chapped and so yeah, I can see that."
+    },
+    {
+      "turn_id": 210,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. But Mhm. Oh yeah, I bet. Did you, when you were in Denver experience any like altitude, like sickness or anything?"
+    },
+    {
+      "turn_id": 211,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. So not like nausea or anything."
+    },
+    {
+      "turn_id": 212,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay."
+    },
+    {
+      "turn_id": 213,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I did go to the Rocky Mountain National Park and uh and today there was only guided tour when we were so exhausted when we got done like completely zap this currently that's a symptom of the altitude sickness or whatever."
+    },
+    {
+      "turn_id": 214,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah. Yeah, wow. Okay."
+    },
+    {
+      "turn_id": 215,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Just because apparently like you're not getting, you know, the normal amount of oxygen and also All right."
+    },
+    {
+      "turn_id": 216,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Uh huh. Right. Yeah. Ok. Yeah. I heard it's like a pretty big thing for like anyone who is moving from California right out of state because so many people are moving out of state."
+    },
+    {
+      "turn_id": 217,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 218,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um Yeah. Okay. That's interesting. Yeah, we were planning on visiting number and then we'll covid happened and we decided not to go just because you know, easier pretty um Mhm."
+    },
+    {
+      "turn_id": 219,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh Yeah, it was funny story about that. It was me I me and my wife were you know, trip for a while then happened."
+    },
+    {
+      "turn_id": 220,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 221,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "It was originally for april. So we had to buy that was when it still seemed like it wasn't gonna last that long kind of the boy and then we found out she was pregnant."
+    },
+    {
+      "turn_id": 222,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm. Mhm."
+    },
+    {
+      "turn_id": 223,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So uh I was thinking this is our second kid toddler."
+    },
+    {
+      "turn_id": 224,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh, okay. Yeah."
+    },
+    {
+      "turn_id": 225,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "It might be a little risky to go but when else am I gonna get to go? So you know and this decision ever, but it turned out fine, so thank you."
+    },
+    {
+      "turn_id": 226,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. See. Okay. Yeah. Oh, that's fine. Okay, so you're okay. Well I mean like congrats I mean your wife like yeah that's awesome, wow."
+    },
+    {
+      "turn_id": 227,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Thank you. Yeah it's coming in like three weeks too, so."
+    },
+    {
+      "turn_id": 228,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh that's so soon. Okay, so you're like preparing for, well okay so you're already a dad, you have another child?"
+    },
+    {
+      "turn_id": 229,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mhm. Yeah. Yeah."
+    },
+    {
+      "turn_id": 230,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay wow."
+    },
+    {
+      "turn_id": 231,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh."
+    },
+    {
+      "turn_id": 232,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "That's that's that's really exciting. I mean I don't yeah it's exciting because I was thinking my coworkers who, I mean a lot of them have kids who are older but I was just thinking like this concerning and how hard that is."
+    },
+    {
+      "turn_id": 233,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 234,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "It's been great for them to manage that."
+    },
+    {
+      "turn_id": 235,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 236,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "But I guess luckily for your kids are okay."
+    },
+    {
+      "turn_id": 237,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah. Right I'm not yeah I'm not super excited that he's a daycare right now and they just that we don't really have another choice, you know like work, which my wife's a teacher but fortunately she's getting to work from home right now uh because she's teaching virtually, like apparently her assistant gave the kids the option to learn virtually or do in class and I'm most of the time like when I'm actually supporting console, you know doing like the flight controlling, you know I have to right now on a short term assignment in the planning room, so let's see that's for the end of the month and then november, I pretty much have a month off there so the same will be on site pretty much the whole month but and I okay yeah."
+    },
+    {
+      "turn_id": 238,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. Okay. But Okay. Okay. Yeah. Mhm. Okay. Okay. Mhm. Yeah. Okay. Yeah. Yeah. Okay. Yeah. Okay. Oh wow, that's interesting. Okay. Um I was just gonna ask like how how are things like obviously like you know with covid down in Alabama I mean obviously things are, I feel like it varies across every part of the country, so."
+    },
+    {
+      "turn_id": 239,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Um it's there for a while."
+    },
+    {
+      "turn_id": 240,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Mhm."
+    },
+    {
+      "turn_id": 241,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "It was looking good like up until a few, we were like one of the only two states the cases were going down apparently are on the rise again and in my county getting you know, pretty boy."
+    },
+    {
+      "turn_id": 242,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah. Okay."
+    },
+    {
+      "turn_id": 243,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So I mean I don't know like there are a lot of people that don't really take the mass quarters and stuff seriously."
+    },
+    {
+      "turn_id": 244,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. Okay."
+    },
+    {
+      "turn_id": 245,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 246,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 247,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 248,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. It's interesting. It's like, you know, like I think here like in debate in the bay area, like people take it really seriously, like you get like mask shamed if you're even if you're like outside like right, like, but it was weird because we want to give somebody a few weeks ago and there was a lot of people I think out of, I'm assuming out of state maybe from other parts of California and like It was like 50% mass, 50% no mass."
+    },
+    {
+      "turn_id": 249,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mm. Mhm. Yeah. No."
+    },
+    {
+      "turn_id": 250,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And I don't know, it's like a weird thing because yeah, I'm so used to seeing people in them now that like when you see people without them, like groups have been like, oh, I don't know, it's just like pre era."
+    },
+    {
+      "turn_id": 251,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Oh yeah. Yeah. No, I understand."
+    },
+    {
+      "turn_id": 252,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Uh, Yeah."
+    },
+    {
+      "turn_id": 253,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Well I don't understand because I see people without them all the time."
+    },
+    {
+      "turn_id": 254,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 255,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Well mm."
+    },
+    {
+      "turn_id": 256,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right. Yeah. Yeah."
+    },
+    {
+      "turn_id": 257,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh."
+    },
+    {
+      "turn_id": 258,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. I mean, what is like, what would be like one of the first things you would do once this hopefully is over."
+    },
+    {
+      "turn_id": 259,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 260,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I don't even know what that classified."
+    },
+    {
+      "turn_id": 261,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh, I really don't know like my wife and I were talking about taking a trip to Louisville and about going, you know, in spite of covid except it's like a four hour drive from us."
+    },
+    {
+      "turn_id": 262,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mm Okay. Yeah. Okay. Yeah."
+    },
+    {
+      "turn_id": 263,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But then social unrest started up and we're like now put off a minute."
+    },
+    {
+      "turn_id": 264,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 265,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mm hmm. I really don't know because like it's not like we can just like pack our bags and travel with, you know, two kids."
+    },
+    {
+      "turn_id": 266,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Right, right."
+    },
+    {
+      "turn_id": 267,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So what about you?"
+    },
+    {
+      "turn_id": 268,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. That's a good, I, I feel like, gosh, like something like going to the gym, I know that's how it's really like date and every day, but the gyms have reopened here."
+    },
+    {
+      "turn_id": 269,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 270,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "But of course a lot of, um, you know, indoor, like swimming pools and stuff is still close."
+    },
+    {
+      "turn_id": 271,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 272,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "This is like the weight room, but I don't know because I'm still with my parents and they're a bit older so they don't want me going to the gym and I kind of have to respect that because, right?"
+    },
+    {
+      "turn_id": 273,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Yeah. Yeah. Yeah."
+    },
+    {
+      "turn_id": 274,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Like at risk. And I was like, I think if I lived in my, if I still lived on my own before Covid, that would be okay. But I don't know, I miss going to the gym. It's, you know, a nice, nice feeling."
+    },
+    {
+      "turn_id": 275,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm, mm hmm."
+    },
+    {
+      "turn_id": 276,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So yeah, yeah."
+    },
+    {
+      "turn_id": 277,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Okay."
+    },
+    {
+      "turn_id": 278,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Nothing two special."
+    },
+    {
+      "turn_id": 279,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh."
+    },
+    {
+      "turn_id": 280,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Honestly. So yeah."
+    },
+    {
+      "turn_id": 281,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "There's a couple of like new restaurants that have popped up here, which we haven't been, we've ordered food in, but you know, there's fronts that I want to eat as soon as it all, but yeah, what, what?"
+    },
+    {
+      "turn_id": 282,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah. Right, Right. Yeah. I would say that restaurant experience would be different to write because you have like Plexico plexi glass and like everyone sitting far apart."
+    },
+    {
+      "turn_id": 283,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Right, sure."
+    },
+    {
+      "turn_id": 284,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So I was trying to think the last time I ate when I was back in March, it before everything shut down here. So I was thinking it was kind of sad. I was like if I knew that was my last time, I would have chosen a really elaborate place as opposed to one of my daily like guidance spots."
+    },
+    {
+      "turn_id": 285,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm. Yeah, I think we've like we've eaten, I mean have early out out, but I guess in the sense that it was out of here and we ate there, it was eating out like most Southwest and like just a few places that we know have outdoor seating and stuff."
+    },
+    {
+      "turn_id": 286,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. Thank you. Yeah. Yeah. Mhm Yeah. Yeah. Yeah."
+    },
+    {
+      "turn_id": 287,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So uh, we've only like done that like two or three times since, you know."
+    },
+    {
+      "turn_id": 288,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Mhm Yeah. Right. Like, yeah."
+    },
+    {
+      "turn_id": 289,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh huh."
+    },
+    {
+      "turn_id": 290,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. That, what would you say is kind of like the state food of Alabama."
+    },
+    {
+      "turn_id": 291,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Uh huh. Oh, uh huh. Some sort of barbecue, I'm sure, wow."
+    },
+    {
+      "turn_id": 292,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. That's what Okay, interesting. Yeah. Would you sing?"
+    },
+    {
+      "turn_id": 293,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Like pork. I'll say full pork."
+    },
+    {
+      "turn_id": 294,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Okay. I was thinking of texas to when you mentioned that because I remember like I had really good pulled pork or barbecue in texas."
+    },
+    {
+      "turn_id": 295,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah. Yeah."
+    },
+    {
+      "turn_id": 296,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um Yeah, that sounds really good."
+    },
+    {
+      "turn_id": 297,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 298,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. I don't know. We'll see. I hope things get better right with this year. Like I know there's been like taco vaccines and all that, so well."
+    },
+    {
+      "turn_id": 299,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "And I, even when they first get released, it'll be a while to get released."
+    },
+    {
+      "turn_id": 300,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay. Yeah."
+    },
+    {
+      "turn_id": 301,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "And to be honest, as fast as the Russian out, I am sure it will be fine."
+    },
+    {
+      "turn_id": 302,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "You're yeah."
+    },
+    {
+      "turn_id": 303,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "But I'm not gonna, I'm gonna get it eventually."
+    },
+    {
+      "turn_id": 304,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And right."
+    },
+    {
+      "turn_id": 305,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I'm just the first one to get it."
+    },
+    {
+      "turn_id": 306,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Right."
+    },
+    {
+      "turn_id": 307,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "You know, you don't want to be the first one to get the new iphone because you want somebody else to get the iphone to see what's on the."
+    },
+    {
+      "turn_id": 308,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "And yeah, exactly. Right."
+    },
+    {
+      "turn_id": 309,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Uh mm hmm."
+    },
+    {
+      "turn_id": 310,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I know I'm with you there. I think I would also wait and I would be curious to see like what the side effects or anything are right like, like, and I know there's a lot of talk of like anti-vaxxers and Stossel."
+    },
+    {
+      "turn_id": 311,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Mhm. Yeah, yeah, yeah, yeah."
+    },
+    {
+      "turn_id": 312,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I don't know, it's, it's going to be another interesting debate. I feel like when we reach that point so."
+    },
+    {
+      "turn_id": 313,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh."
+    },
+    {
+      "turn_id": 314,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Um Okay. I am probably, I know you were keeping time."
+    },
+    {
+      "turn_id": 315,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh, right."
+    },
+    {
+      "turn_id": 316,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I didn't, I just had my other type of it, but I'm probably going to have to hop off to do some rents and parents before it's like 4 30 over here."
+    },
+    {
+      "turn_id": 317,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Thank you."
+    },
+    {
+      "turn_id": 318,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So trying to catch everywhere."
+    },
+    {
+      "turn_id": 319,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. Okay. We are. Right. Can you wait like one more minute? Because we were right, okay."
+    },
+    {
+      "turn_id": 320,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Oh I can yeah. Yeah. Don't worry."
+    },
+    {
+      "turn_id": 321,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 322,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Sorry, I'm not trying to brush off or anything. I was yeah."
+    },
+    {
+      "turn_id": 323,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Okay. It's all good."
+    },
+    {
+      "turn_id": 324,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "No, no, no. Yeah I was."
+    },
+    {
+      "turn_id": 325,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I just want to be sure we get paid for this. So, you know, Yeah, I was just browsing Reddit and uh like saw like a life pro tip on there."
+    },
+    {
+      "turn_id": 326,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. I guess like what kind of like prompted you or like what what made you interested in joining prolific and doing like these studies. Yeah. Mhm."
+    },
+    {
+      "turn_id": 327,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "If you have a lot of your hand, here's some easy ways to make money."
+    },
+    {
+      "turn_id": 328,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah, yep."
+    },
+    {
+      "turn_id": 329,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So here I am."
+    },
+    {
+      "turn_id": 330,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah."
+    },
+    {
+      "turn_id": 331,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "What about you?"
+    },
+    {
+      "turn_id": 332,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "A passive. No, I have to say the same exact thing right there."
+    },
+    {
+      "turn_id": 333,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 334,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Like also following the L."
+    },
+    {
+      "turn_id": 335,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Oh, oh, not my fault that one too."
+    },
+    {
+      "turn_id": 336,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "P. T. S. Or I think beer money or something like that. And someone was like, hey okay. Yeah. and I like this one as opposed to I think one of the other ones I tried with slag books."
+    },
+    {
+      "turn_id": 337,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Oh, I did that little back in college, back well, back then like I got several amazon gift cards and stuff."
+    },
+    {
+      "turn_id": 338,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "I don't know if you've heard of it but okay you didn't know it was okay. Did you? You didn't really like that experience as much for? Oh nice. Yeah."
+    },
+    {
+      "turn_id": 339,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Like it just seems weird now. Like I can't really I don't know."
+    },
+    {
+      "turn_id": 340,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 341,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Can't well, I say I can't really figure out that down and like I want to have the desire to figure out and I I'd know how was your experience with it?"
+    },
+    {
+      "turn_id": 342,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Yeah. Right. Yeah I would say same with you. I didn't like it and I just felt like there were it was just really bad and I hated like taking a survey getting halfway through it being disqualified and you're like I just wasted five minutes or 10 minutes of my time, right?"
+    },
+    {
+      "turn_id": 343,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Right. Okay. What? Mhm."
+    },
+    {
+      "turn_id": 344,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Or as I feel like prolific is like contributing to like actually research which is pretty interesting."
+    },
+    {
+      "turn_id": 345,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "All right. Right. Yeah. Yeah."
+    },
+    {
+      "turn_id": 346,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Uh huh."
+    },
+    {
+      "turn_id": 347,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah. Most of the ones I've done were like research to universities, couple of market research ones at all, that those ones paid better than all the university wants, so."
+    },
+    {
+      "turn_id": 348,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah. Right. Yeah. Yeah exactly. So yeah and then I guess these pay pretty well obviously since you talk to people but."
+    },
+    {
+      "turn_id": 349,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Mhm."
+    },
+    {
+      "turn_id": 350,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 351,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Anyway, we are uh approaching 27 minutes right now."
+    },
+    {
+      "turn_id": 352,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Okay mm hmm."
+    },
+    {
+      "turn_id": 353,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "So, guess how often you can run your errands? It was great talking to you."
+    },
+    {
+      "turn_id": 354,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "That's good. Yeah. Likewise."
+    },
+    {
+      "turn_id": 355,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 356,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Um, yeah. Have have fun."
+    },
+    {
+      "turn_id": 357,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "I hope I left better approaching of Alabama than the last guy."
+    },
+    {
+      "turn_id": 358,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Have a good weekend. Oh, you did."
+    },
+    {
+      "turn_id": 359,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 360,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "Very, it was a lot better."
+    },
+    {
+      "turn_id": 361,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Yeah."
+    },
+    {
+      "turn_id": 362,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "So, yeah. Anyways, have a good weekend and take care."
+    },
+    {
+      "turn_id": 363,
+      "speaker_id": "5f17821d53d8590009cfc951",
+      "utterance": "Alright. I catch you."
+    },
+    {
+      "turn_id": 364,
+      "speaker_id": "5e5ca080bb37ff47b09dd4cc",
+      "utterance": "All right. Bye."
+    }
+  ]
+}

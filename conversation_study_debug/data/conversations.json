@@ -1,0 +1,10 @@
+[
+  {
+    "conversation_id": "example_conversation",
+    "speakers": [
+      "5e5ca080bb37ff47b09dd4cc",
+      "5f17821d53d8590009cfc951"
+    ],
+    "n_utterances": 365
+  }
+]

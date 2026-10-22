@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Study — Transcript</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="router.js"></script>
+  <style>
+    .topline { display:flex; justify-content:space-between; align-items:baseline; gap:20px; margin-bottom:28px; }
+    #progress { color:var(--muted); white-space:nowrap; }
+    #turnContainer { display:grid; gap:18px; min-height:280px; }
+    .utterance { border:1px solid var(--border); border-radius:8px; padding:20px 22px; }
+    .speaker { font-weight:700; margin-bottom:8px; }
+    .text { font-size:20px; white-space:pre-wrap; }
+    .instruction { margin-top:32px; text-align:center; color:var(--muted); }
+    .debug-controls { margin-top:28px; padding:14px; background:var(--soft); border:1px solid var(--border); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topline">
+    <h1>Conversation Transcript</h1>
+    <div id="progress"></div>
+  </div>
+
+  <div id="turnContainer"></div>
+  <p class="instruction">Press ENTER to continue.</p>
+
+  <div id="debugControls" class="debug-controls hidden">
+    <strong>Debug:</strong>
+    <button id="jumpEnd" type="button">Jump to end of transcript</button>
+  </div>
+
+  <div id="error" class="error hidden"></div>
+</main>
+
+<script>
+(async function () {
+  if (routeIfCurrentStageSkipped(2)) return;
+
+  const { conversationId, targetId, debug } = getStudyParams();
+  const container = document.getElementById("turnContainer");
+  const progress = document.getElementById("progress");
+  const errorBox = document.getElementById("error");
+
+  function fail(message) {
+    errorBox.classList.remove("hidden");
+    errorBox.textContent = message;
+  }
+
+  function escapeHtml(text) {
+    return String(text)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  if (!conversationId || !targetId) {
+    fail("Missing conversation_id or target_id.");
+    return;
+  }
+
+  try {
+    const [configResponse, convoResponse] = await Promise.all([
+      fetch("config.json"),
+      fetch(`data/conversations/${encodeURIComponent(conversationId)}.json`)
+    ]);
+
+    if (!configResponse.ok || !convoResponse.ok) throw new Error("Could not load study data.");
+
+    const config = await configResponse.json();
+    const conversation = await convoResponse.json();
+
+    const speakerLabels = {};
+    conversation.speakers.forEach((speaker, index) => {
+      speakerLabels[speaker] = `Person ${String.fromCharCode(65 + index)}`;
+    });
+
+    const rowsPerScreen = config.rows_per_transcript_screen || 2;
+    const screens = [];
+    for (let i = 0; i < conversation.utterances.length; i += rowsPerScreen) {
+      screens.push(conversation.utterances.slice(i, i + rowsPerScreen));
+    }
+
+    let currentIndex = 0;
+    let shownAt = null;
+    const timing = [];
+
+    const session = JSON.parse(localStorage.getItem("conversationStudySession") || "{}");
+    if (!session.participant_id) {
+      session.participant_id =
+        new URLSearchParams(window.location.search).get("participant_id") ||
+        crypto.randomUUID();
+    }
+
+    session.conversation_id = conversationId;
+    session.target_id = targetId;
+    session.debug_mode = debug;
+    session.study_started_at = session.study_started_at || new Date().toISOString();
+    session.stage2_started_at = new Date().toISOString();
+    session.speaker_labels = speakerLabels;
+    session.target_label = speakerLabels[targetId];
+    localStorage.setItem("conversationStudySession", JSON.stringify(session));
+
+    if (debug) document.getElementById("debugControls").classList.remove("hidden");
+
+    function render() {
+      const rows = screens[currentIndex];
+      container.innerHTML = rows.map(row => `
+        <div class="utterance">
+          <div class="speaker">${escapeHtml(speakerLabels[row.speaker_id])}</div>
+          <div class="text">${escapeHtml(row.utterance)}</div>
+        </div>
+      `).join("");
+
+      progress.textContent = `Section ${currentIndex + 1} of ${screens.length}`;
+      shownAt = performance.now();
+    }
+
+    function finishTranscript() {
+      const updated = JSON.parse(localStorage.getItem("conversationStudySession") || "{}");
+      updated.stage2_completed_at = new Date().toISOString();
+      updated.transcript_timing = timing;
+      localStorage.setItem("conversationStudySession", JSON.stringify(updated));
+      goToNextStage(2);
+    }
+
+    render();
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" || event.repeat) return;
+
+      timing.push({
+        section_index: currentIndex,
+        turn_ids: screens[currentIndex].map(row => row.turn_id),
+        viewing_time_ms: Math.round(performance.now() - shownAt)
+      });
+
+      currentIndex += 1;
+
+      if (currentIndex >= screens.length) {
+        finishTranscript();
+        return;
+      }
+      render();
+    });
+
+    document.getElementById("jumpEnd").addEventListener("click", function () {
+      if (debug) finishTranscript();
+    });
+  } catch (error) {
+    fail(error.message);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Study — Instructions</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="router.js"></script>
+</head>
+<body>
+<main>
+  <h1>Conversation Study</h1>
+  <p>You will read a transcript of a conversation between two people.</p>
+  <p>The transcript will be presented in small sections. Read each section carefully and proceed at your own pace.</p>
+  <p><strong>After reading the transcript, you will answer questions about one of the two people.</strong></p>
+  <p style="margin-top:36px;font-weight:700;">Press ENTER to begin.</p>
+  <p id="debugNote" class="muted"></p>
+  <div id="error" class="error hidden"></div>
+</main>
+
+<script>
+(async function () {
+  if (routeIfCurrentStageSkipped(1)) return;
+
+  const { params, conversationId, targetId, debug } = getStudyParams();
+  const errorBox = document.getElementById("error");
+
+  function fail(message) {
+    errorBox.classList.remove("hidden");
+    errorBox.textContent = message;
+  }
+
+  if (!conversationId || !targetId) {
+    fail("Missing conversation_id or target_id. Start from launch.html.");
+    return;
+  }
+
+  try {
+    const response = await fetch(`data/conversations/${encodeURIComponent(conversationId)}.json`);
+    if (!response.ok) throw new Error("Conversation file could not be loaded.");
+
+    const conversation = await response.json();
+    if (!conversation.speakers.includes(targetId)) {
+      throw new Error("Selected target is not a speaker in this conversation.");
+    }
+
+    let participantId = params.get("participant_id");
+    if (!participantId) {
+      participantId = crypto.randomUUID();
+      params.set("participant_id", participantId);
+      history.replaceState(null, "", `${location.pathname}?${params.toString()}`);
+    }
+
+    const existing = JSON.parse(localStorage.getItem("conversationStudySession") || "{}");
+
+    localStorage.setItem("conversationStudySession", JSON.stringify({
+      ...existing,
+      participant_id: participantId,
+      conversation_id: conversationId,
+      target_id: targetId,
+      debug_mode: debug,
+      study_started_at: existing.study_started_at || new Date().toISOString(),
+      stage1_started_at: new Date().toISOString()
+    }));
+
+    if (debug) document.getElementById("debugNote").textContent = "DEBUG MODE ACTIVE";
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" || event.repeat) return;
+
+      const session = JSON.parse(localStorage.getItem("conversationStudySession") || "{}");
+      session.stage1_completed_at = new Date().toISOString();
+      localStorage.setItem("conversationStudySession", JSON.stringify(session));
+
+      goToNextStage(1);
+    });
+  } catch (error) {
+    fail(error.message);
+  }
+})();
+</script>
+</body>
+</html>

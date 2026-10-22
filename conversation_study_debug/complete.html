@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversation Study — Complete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Study complete</h1>
+  <p>Thank you.</p>
+  <p id="debugMessage" class="muted"></p>
+</main>
+<script>
+const params = new URLSearchParams(window.location.search);
+if (params.get("debug") === "1") {
+  document.getElementById("debugMessage").textContent =
+    "DEBUG MODE: participant flow ended here.";
+}
+</script>
+</body>
+</html>
